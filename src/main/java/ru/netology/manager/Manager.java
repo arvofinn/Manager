@@ -24,6 +24,7 @@ public class Manager {
     }
 
     public String[] findAll() {
+
         return films;
 
     }
