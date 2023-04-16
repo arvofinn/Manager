@@ -125,4 +125,74 @@ public class ManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    @Test
+
+    public void test6() {
+
+        String film1 = "Film A";
+        String film2 = "Film B";
+        String film3 = "Film C";
+        String film4 = "Film D";
+        String film5 = "Film E";
+        String film6 = "Film F";
+        String film7 = "Film G";
+        String film8 = "Film H";
+        String film9 = "Film I";
+        String film10 = "Film J";
+
+        Manager manager = new Manager();
+
+        manager.addFilm(film1);
+        manager.addFilm(film2);
+        manager.addFilm(film3);
+        manager.addFilm(film4);
+        manager.addFilm(film5);
+        manager.addFilm(film6);
+        manager.addFilm(film7);
+        manager.addFilm(film8);
+        manager.addFilm(film9);
+        manager.addFilm(film10);
+
+        String[] expected = { "Film J", "Film I", "Film H", "Film G", "Film F", "Film E", "Film D", "Film C", "Film B", "Film A" };
+        String[] actual = manager.findLast();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+
+    public void test7() {
+
+        String film1 = "Film A";
+        String film2 = "Film B";
+        String film3 = "Film C";
+        String film4 = "Film D";
+        String film5 = "Film E";
+        String film6 = "Film F";
+        String film7 = "Film G";
+        String film8 = "Film H";
+        String film9 = "Film I";
+        String film10 = "Film J";
+        String film11 = "Film K";
+
+        Manager manager = new Manager();
+
+        manager.addFilm(film1);
+        manager.addFilm(film2);
+        manager.addFilm(film3);
+        manager.addFilm(film4);
+        manager.addFilm(film5);
+        manager.addFilm(film6);
+        manager.addFilm(film7);
+        manager.addFilm(film8);
+        manager.addFilm(film9);
+        manager.addFilm(film10);
+        manager.addFilm(film11);
+
+        String[] expected = { "Film K", "Film J", "Film I", "Film H", "Film G", "Film F", "Film E", "Film D", "Film C", "Film B" };
+        String[] actual = manager.findLast();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
 }
